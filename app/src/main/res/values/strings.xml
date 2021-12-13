@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">PostRequest</string>
-    <string name="add_new_user">Add new user</string>
+    <string name="add_new_item">Add new user</string>
 </resources>

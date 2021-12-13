@@ -20,7 +20,7 @@ class UserInfoActivity : AppCompatActivity() {
 
         val saveButton = findViewById<Button>(R.id.save_btn)
         saveButton.setOnClickListener {
-            insertUser(UserItem(nameEditText.text.toString(), locationEditText.text.toString()))
+            insertUser(UserItem(nameEditText.text.toString(), locationEditText.text.toString(),0))
         }
 
         val viewButton = findViewById<Button>(R.id.view_btn)

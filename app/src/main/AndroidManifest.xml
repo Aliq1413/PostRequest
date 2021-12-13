@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PostRequest">
         <activity
+            android:name=".UsersUpdateDelete"
+            android:exported="true" />
+        <activity
             android:name=".UserInfoActivity"
             android:exported="true" />
         <activity

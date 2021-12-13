@@ -15,6 +15,7 @@ import retrofit2.Response
 
 lateinit var recyclerView: RecyclerView
 lateinit var usersList: ArrayList<UserItem>
+lateinit var  btUserUpdateDelete:Button
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -49,5 +50,10 @@ class MainActivity : AppCompatActivity() {
                 call.cancel()
             }
         })
+        btUserUpdateDelete = findViewById(R.id.userUpdate)
+        btUserUpdateDelete.setOnClickListener{
+            val intent = Intent(this, UsersUpdateDelete::class.java)
+            startActivity(intent)
     }
-}
+
+}}

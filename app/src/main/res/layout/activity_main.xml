@@ -13,8 +13,24 @@
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/userUpdate"
+        android:layout_width="392dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="9dp"
+        android:text="Update     Or      Delete"
+        app:layout_constraintBottom_toTopOf="@+id/new_user_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/new_user_btn"
@@ -25,9 +41,11 @@
         android:layout_marginLeft="10dp"
         android:layout_marginEnd="9dp"
         android:layout_marginRight="9dp"
-        android:text="@string/add_new_user"
+        android:text="@string/add_new_item"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="@id/users_rv"  />
+        app:layout_constraintBottom_toBottomOf="@id/users_rv">
+    </Button>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
